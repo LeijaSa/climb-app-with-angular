@@ -1,0 +1,16 @@
+.list{
+   display:flex;
+   flex-direction: column;
+  
+}
+.heading{
+    padding-top: 40px; /* Add padding inside the content box */
+    text-align: center;
+}
+.titles{
+    display:flex;
+    flex-direction: row;
+}
+.title{
+    padding:20px;
+}

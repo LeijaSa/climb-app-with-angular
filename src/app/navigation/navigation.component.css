@@ -1,0 +1,7 @@
+.navigation {
+    background-color: #F0F0F0;
+    padding: 20px; /* Add padding inside the content box */
+    max-width: 960px; 
+    margin: 0 auto; /* Center the content horizontally */
+}
+
