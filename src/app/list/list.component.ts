@@ -10,7 +10,7 @@ import {MatInputModule} from '@angular/material/input';
 import { format } from 'date-fns';
 
 @Component({
-  selector: 'list',
+  selector: 'app-list',
   standalone: true,
   imports: [AsyncPipe, NgIf, NgFor,MatTableModule, DatePipe, MatFormFieldModule, MatInputModule],
   templateUrl: './list.component.html',
@@ -28,7 +28,7 @@ export class ListComponent implements OnInit {
       this.dataSource.data = data;
     });
     
-    this.dataSource.filterPredicate = (data: any, filter: string) => {
+    this.dataSource.filterPredicate = (data: BoulderProblemType, filter: string) => {
       const formattedDate = format(new Date(data.add_date), 'dd/MM/yyyy'); // Format date for filtering
       // Match filter against description, state, grade or parts of the date (day, month, year)
       return (

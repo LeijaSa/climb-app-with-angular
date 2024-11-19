@@ -1,9 +1,9 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
 import { ListComponent } from '../list/list.component';
 
 @Component({
-  selector: 'navigation',
+  selector: 'app-navigation',
   standalone: true,
   imports: [MatTabsModule, ListComponent],
   templateUrl: './navigation.component.html',
