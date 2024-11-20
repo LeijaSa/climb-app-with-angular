@@ -1,0 +1,63 @@
+<div>
+  <h1 class="heading">Add new boulder problem</h1>
+</div>
+<form
+  class="form-container"
+  #boulderForm="ngForm"
+  (ngSubmit)="onSubmit(boulderForm)"
+>
+  <div class="row">
+    <mat-radio-group
+      aria-label="Select an option"
+      name="state"
+      ngModel
+      required
+      #status="ngModel"
+    >
+      <mat-radio-button value="project">project</mat-radio-button>
+      <mat-radio-button value="attempted">attempted</mat-radio-button>
+      <mat-radio-button value="completed">completed</mat-radio-button>
+    </mat-radio-group>
+  </div>
+  <div class="row">
+    <mat-form-field class="form-field">
+      <mat-label>Grade</mat-label>
+      <input matInput name="grade" ngModel required #grade="ngModel" />
+    </mat-form-field>
+    <mat-form-field class="form-field">
+      <mat-label>Location</mat-label>
+      <mat-select name="location" ngModel required #location="ngModel">
+        <mat-option value="102">Herttoniemi</mat-option>
+        <mat-option value="103">Salmisaari</mat-option>
+        <mat-option value="101">Pasila</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field class="form-field full-width">
+      <mat-label>Description</mat-label>
+      <textarea
+        matInput
+        name="description"
+        ngModel
+        required
+        minlength="10"
+        #description="ngModel"
+      ></textarea>
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <button
+      class="button"
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="boulderForm.invalid"
+    >
+      Add new boulder problem
+    </button>
+  </div>
+  @if ( grade.touched && grade.invalid){
+  <p class="control-error">Invalid grade. Please check your input.</p>
+  }
+</form>

@@ -1,8 +1,8 @@
 export type BoulderProblemType = {
-  id: number;
-  description: string;
-  grade: string;
+  id: string;
   state: string;
+  grade: string;
+  description: string;
   add_date: Date;
   location_id: number;
 };

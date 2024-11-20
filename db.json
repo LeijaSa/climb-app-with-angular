@@ -1,101 +1,101 @@
-{"boulder_problems": [
-  {
-    "id": 1,
-    "description": "A challenging overhang with dynamic moves.",
-    "grade": "7b",
-    "state": "completed",
-    "add_date": "2024-11-18",
-    "location_id": 101
-  },
-  {
-    "id": 2,
-    "description": "A technical slab with delicate footwork.",
-    "grade": "6a",
-    "state": "project",
-    "add_date": "2024-11-15",
-    "location_id": 102
-  },
-  {
-    "id": 3,
-    "description": "A beginner-friendly problem with large holds.",
-    "grade": "5a",
-    "state": "completed",
-    "add_date": "2024-10-10",
-    "location_id": 103
-  },
-  {
-    "id": 4,
-    "description": "A long traverse with pumpy holds and a tricky finish.",
-    "grade": "4c",
-    "state": "attempted",
-    "add_date": "2023-11-01",
-    "location_id": 101
-  },
-  {
-    "id": 5,
-    "description": "A roof climb with big, powerful moves.",
-    "grade": "6",
-    "state": "completed",
-    "add_date": "2024-10-30",
-    "location_id": 102
-  },
-  {
-    "id": 6,
-    "description": "A crimpy vertical wall that requires precision.",
-    "grade": "4c",
-    "state": "project",
-    "add_date": "2024-11-12",
-    "location_id": 102
-  },
-  {
-    "id": 7,
-    "description": "An arête climb with interesting heel hooks.",
-    "grade": "5c",
-    "state": "completed",
-    "add_date": "2023-09-25",
-    "location_id": 101
-  },
-  {
-    "id": 8,
-    "description": "A fun overhang with juggy holds, perfect for warming up.",
-    "grade": "6+",
-    "state": "completed",
-    "add_date": "2024-08-10",
-    "location_id": 103
-  },
-  {
-    "id": 9,
-    "description": "A pocket-heavy problem that demands strong fingers.",
-    "grade": "7b",
-    "state": "project",
-    "add_date": "2024-11-10",
-    "location_id": 101
-  },
-  {
-    "id": 10,
-    "description": "A technical dyno to a sharp edge, requiring precision and power.",
-    "grade": "5a",
-    "state": "attempted",
-    "add_date": "2024-11-05",
-    "location_id": 102
-  }
-],
-    "locations": [
-      {
-        "id": 101,
-        "name": "Pasila",
-        "region": "North"
-      },
-      {
-        "id": 102,
-        "name": "Herttoniemi",
-        "region": "East"
-      },
-      {
-        "id": 103,
-        "name": "Salmisaari",
-        "region": "West"
-      }
-    ]
-  }
-  
+{
+  "boulder_problems": [
+    {
+      "id": "1",
+      "description": "A challenging overhang with dynamic moves.",
+      "grade": "7b",
+      "state": "completed",
+      "add_date": "2024-11-18",
+      "location_id": 101
+    },
+    {
+      "id": "2",
+      "description": "A technical slab with delicate footwork.",
+      "grade": "6a",
+      "state": "project",
+      "add_date": "2024-11-15",
+      "location_id": 102
+    },
+    {
+      "id": "3",
+      "description": "A beginner-friendly problem with large holds.",
+      "grade": "5a",
+      "state": "completed",
+      "add_date": "2024-10-10",
+      "location_id": 103
+    },
+    {
+      "id": "4",
+      "description": "A long traverse with pumpy holds and a tricky finish.",
+      "grade": "4c",
+      "state": "attempted",
+      "add_date": "2023-11-01",
+      "location_id": 101
+    },
+    {
+      "id": "5",
+      "description": "A roof climb with big, powerful moves.",
+      "grade": "6",
+      "state": "completed",
+      "add_date": "2024-10-30",
+      "location_id": 102
+    },
+    {
+      "id": "6",
+      "description": "A crimpy vertical wall that requires precision.",
+      "grade": "4c",
+      "state": "project",
+      "add_date": "2024-11-12",
+      "location_id": 102
+    },
+    {
+      "id": "7",
+      "description": "An arête climb with interesting heel hooks.",
+      "grade": "5c",
+      "state": "completed",
+      "add_date": "2023-09-25",
+      "location_id": 101
+    },
+    {
+      "id": "8",
+      "description": "A fun overhang with juggy holds, perfect for warming up.",
+      "grade": "6+",
+      "state": "completed",
+      "add_date": "2024-08-10",
+      "location_id": 103
+    },
+    {
+      "id": "9",
+      "description": "A pocket-heavy problem that demands strong fingers.",
+      "grade": "7b",
+      "state": "project",
+      "add_date": "2024-11-10",
+      "location_id": 101
+    },
+    {
+      "id": "10",
+      "description": "A technical dyno to a sharp edge, requiring precision and power.",
+      "grade": "5a",
+      "state": "attempted",
+      "add_date": "2024-11-05",
+      "location_id": 102
+    }
+  ],
+  "locations": [
+    {
+      "id": "101",
+      "name": "Pasila",
+      "region": "North"
+    },
+    {
+      "id": "102",
+      "name": "Herttoniemi",
+      "region": "East"
+    },
+    {
+      "id": "103",
+      "name": "Salmisaari",
+      "region": "West"
+    }
+  ]
+}
