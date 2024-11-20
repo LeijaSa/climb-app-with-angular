@@ -24,6 +24,12 @@ export class ContentService {
       });
   }
 
+  getBoulderProblem(id: string) {
+    return this.httpClient.get<BoulderProblemType[]>(
+      `http://localhost:5000/boulder_problems/${id}`
+    );
+  }
+
   get boulderProblemsSignal() {
     return this.boulderProblems.asReadonly();
   }
@@ -33,7 +39,7 @@ export class ContentService {
     grade: string,
     description: string,
     location_id: number
-  ) {
+  ): void {
     const payload = {
       id: uuid(),
       state,
@@ -61,6 +67,23 @@ export class ContentService {
           console.error('Error adding new problem:', err);
           // Optionally show a user-friendly message or handle the error gracefully
           alert('Failed to add new problem. Please try again later.');
+        },
+      });
+  }
+
+  deleteBoulderProblem(id: string) {
+    return this.httpClient
+      .delete(`http://localhost:5000/boulder_problems/${id}`)
+      .subscribe({
+        next: () => {
+          this.boulderProblems.update((currentProblems) =>
+            currentProblems.filter((problem) => problem.id !== id)
+          );
+        },
+        error: (err) => {
+          console.error('Error deleteing a problem:', err);
+          // Optionally show a user-friendly message or handle the error gracefully
+          alert('Failed to delete a problem. Please try again later.');
         },
       });
   }
