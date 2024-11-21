@@ -29,13 +29,17 @@ To run the application locally, follow these steps:
 
 1. **Clone the Repository**:
    To get started, clone the repository by running the following command in your terminal:
+
    ```bash
    git clone https://github.com/your-username/angular-climbing-app.git
    ```
 
-2.**To install all the required dependencies, run the following command:**
-```bash
-npm install
+2. **To install all the required dependencies, run the following command:**
+
+   ```bash
+   npm install
+
+   ```
 
 3. **Start the JSON Server**:
    In a terminal window, navigate to the project directory and run the following command to start the mock backend server:
