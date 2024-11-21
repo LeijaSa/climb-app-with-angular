@@ -15,7 +15,8 @@ export class ContentService {
       .get<BoulderProblemType[]>('http://localhost:5000/boulder_problems')
       .subscribe({
         next: (problems) => {
-          this.boulderProblems.set(problems); // Set the signal with the fetched data
+          // Set the signal with the fetched data
+          this.boulderProblems.set(problems);
         },
         error: (err) => {
           console.error('Failed to fetch boulder problems:', err);
@@ -57,7 +58,6 @@ export class ContentService {
       .subscribe({
         next: (newProblem) => {
           // Update the signal with the new problem added
-          console.log('New problem added:', newProblem);
           this.boulderProblems.update((currentProblems) => [
             ...currentProblems,
             newProblem,
@@ -65,8 +65,31 @@ export class ContentService {
         },
         error: (err) => {
           console.error('Error adding new problem:', err);
-          // Optionally show a user-friendly message or handle the error gracefully
           alert('Failed to add new problem. Please try again later.');
+        },
+      });
+  }
+
+  updateProblemState(id: string, newState: string) {
+    const payload = { state: newState };
+
+    return this.httpClient
+      .patch<BoulderProblemType>(
+        `http://localhost:5000/boulder_problems/${id}`,
+        payload
+      )
+      .subscribe({
+        next: (updatedProblem) => {
+          // Update the signal with the updated problem
+          this.boulderProblems.update((currentProblems) =>
+            currentProblems.map((problem) =>
+              problem.id === updatedProblem.id ? updatedProblem : problem
+            )
+          );
+        },
+        error: (err) => {
+          console.error('Error deleteing a problem:', err);
+          alert('Failed to update a problem. Please try again later.');
         },
       });
   }
@@ -82,7 +105,6 @@ export class ContentService {
         },
         error: (err) => {
           console.error('Error deleteing a problem:', err);
-          // Optionally show a user-friendly message or handle the error gracefully
           alert('Failed to delete a problem. Please try again later.');
         },
       });

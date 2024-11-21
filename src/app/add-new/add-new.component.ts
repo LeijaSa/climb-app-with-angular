@@ -4,7 +4,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule, NgForm } from '@angular/forms';
-import { NgIf } from '@angular/common';
 import { ContentService } from '../services/content.service';
 
 @Component({
@@ -16,7 +15,6 @@ import { ContentService } from '../services/content.service';
     MatFormFieldModule,
     MatRadioModule,
     FormsModule,
-    NgIf,
   ],
   templateUrl: './add-new.component.html',
   styleUrl: './add-new.component.css',

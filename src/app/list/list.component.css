@@ -7,3 +7,8 @@
   font-size: 14px;
   margin-top: 4px;
 }
+.align-button-content {
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+  gap: 8px; /* Add some space between the text and the icon */
+}
