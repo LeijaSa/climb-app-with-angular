@@ -48,7 +48,7 @@
   <ng-container matColumnDef="trash">
     <th mat-header-cell *matHeaderCellDef>Delete</th>
     <td mat-cell *matCellDef="let element">
-      <button mat-icon-button (click)="deleteProblem(element.id)">
+      <button mat-icon-button (click)="openDeleteDialog(element.id)">
         <mat-icon>delete</mat-icon>
         <!-- Trash icon -->
       </button>

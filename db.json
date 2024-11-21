@@ -60,25 +60,17 @@
       "id": "8",
       "description": "A fun overhang with juggy holds, perfect for warming up.",
       "grade": "6+",
-      "state": "completed",
+      "state": "attempted",
       "add_date": "2024-08-10",
       "location_id": 103
     },
     {
-      "id": "9",
-      "description": "A pocket-heavy problem that demands strong fingers.",
-      "grade": "7b",
-      "state": "project",
-      "add_date": "2024-11-10",
-      "location_id": 101
-    },
-    {
-      "id": "606564ea-5945-41de-9c57-14ccdb6c92ac",
-      "state": "completed",
-      "grade": "5",
-      "description": "rt dfg fgf gdfgdfg",
-      "add_date": "2024-11-20T20:05:12.086Z",
-      "location_id": "102"
+      "id": "066d2dfd-8dc9-4673-b850-108181281ea6",
+      "state": "attempted",
+      "grade": "4c",
+      "description": "fg dfg fdgfd gfdg",
+      "add_date": "2024-11-21T10:48:11.234Z",
+      "location_id": "103"
     }
   ],
   "locations": [

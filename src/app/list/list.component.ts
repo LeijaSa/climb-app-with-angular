@@ -7,6 +7,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogComponent } from '../dialog/dialog.component';
+import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component';
 
 @Component({
   selector: 'app-list',
@@ -37,16 +38,14 @@ export class ListComponent implements OnInit {
   ngOnInit(): void {
     this.contentService.getBoulderProblems();
   }
-  deleteProblem(id: string) {
-    this.contentService.deleteBoulderProblem(id);
-  }
   openDialog(element_id: string): void {
-    const dialogRef = this.dialog.open(DialogComponent, {
+    this.dialog.open(DialogComponent, {
       data: { id: element_id },
     });
-
-    dialogRef.afterClosed().subscribe((result) => {
-      // No action required after dialog is closed
+  }
+  openDeleteDialog(element_id: string): void {
+    this.dialog.open(DeleteDialogComponent, {
+      data: { id: element_id },
     });
   }
 }

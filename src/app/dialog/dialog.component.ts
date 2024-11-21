@@ -68,7 +68,7 @@ export class DialogComponent {
   onSubmit(): void {
     if (this.data.state) {
       this.contentService.updateProblemState(this.data.id, this.data.state);
-      this.dialogRef.close(this.data.state);
+      this.dialogRef.close();
     } else {
       console.error('Form is invalid');
     }
